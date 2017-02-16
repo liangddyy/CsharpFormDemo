@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E061EB94-CA26-4410-B7AA-18C57B903BE3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Awesomium.Core, Version=1.6.6.0, Culture=neutral, PublicKeyToken=e1a0d7c8071a5214" />
+    <Reference Include="Awesomium.Windows.Forms, Version=1.6.6.0, Culture=neutral, PublicKeyToken=9bd24830fbe304a0, processorArchitecture=x86" />
+    <Reference Include="CSkin">
+      <HintPath>C:\Users\Tom\Desktop\CSkin 4.0\CSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_Teacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_Teacher.Designer.cs">
+      <DependentUpon>Manage_Teacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mange_Class_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mange_Class_Add.Designer.cs">
+      <DependentUpon>Mange_Class_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mange_index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mange_index.Designer.cs">
+      <DependentUpon>Mange_index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mange_News.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mange_News.Designer.cs">
+      <DependentUpon>Mange_News.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mange_Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mange_Student.Designer.cs">
+      <DependentUpon>Mange_Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mange_Student_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mange_Student_Add.Designer.cs">
+      <DependentUpon>Mange_Student_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mange_Student_Change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mange_Student_Change.Designer.cs">
+      <DependentUpon>Mange_Student_Change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mange_Student_Look.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mange_Student_Look.Designer.cs">
+      <DependentUpon>Mange_Student_Look.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mange_Teacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mange_Teacher.Designer.cs">
+      <DependentUpon>Mange_Teacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mange_Teacher_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mange_Teacher_Add.Designer.cs">
+      <DependentUpon>Mange_Teacher_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mange_Teacher_Change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mange_Teacher_Change.Designer.cs">
+      <DependentUpon>Mange_Teacher_Change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mange_Teacher_Look.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mange_Teacher_Look.Designer.cs">
+      <DependentUpon>Mange_Teacher_Look.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opreate.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="softDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>softDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="softDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>softDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="softDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>softDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="softDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>softDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="softDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>softDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="softDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>softDataSet5.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_Teacher.resx">
+      <DependentUpon>Manage_Teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mange_Class_Add.resx">
+      <DependentUpon>Mange_Class_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mange_index.resx">
+      <DependentUpon>Mange_index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mange_News.resx">
+      <DependentUpon>Mange_News.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mange_Student.resx">
+      <DependentUpon>Mange_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mange_Student_Add.resx">
+      <DependentUpon>Mange_Student_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mange_Student_Change.resx">
+      <DependentUpon>Mange_Student_Change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mange_Student_Look.resx">
+      <DependentUpon>Mange_Student_Look.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mange_Teacher.resx">
+      <DependentUpon>Mange_Teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mange_Teacher_Add.resx">
+      <DependentUpon>Mange_Teacher_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mange_Teacher_Change.resx">
+      <DependentUpon>Mange_Teacher_Change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mange_Teacher_Look.resx">
+      <DependentUpon>Mange_Teacher_Look.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="softDataSet.xsc">
+      <DependentUpon>softDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="softDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>softDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="softDataSet.xss">
+      <DependentUpon>softDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="softDataSet1.xsc">
+      <DependentUpon>softDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="softDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>softDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="softDataSet1.xss">
+      <DependentUpon>softDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="softDataSet2.xsc">
+      <DependentUpon>softDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="softDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>softDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="softDataSet2.xss">
+      <DependentUpon>softDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="softDataSet3.xsc">
+      <DependentUpon>softDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="softDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>softDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="softDataSet3.xss">
+      <DependentUpon>softDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="softDataSet4.xsc">
+      <DependentUpon>softDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="softDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>softDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="softDataSet4.xss">
+      <DependentUpon>softDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="softDataSet5.xsc">
+      <DependentUpon>softDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="softDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>softDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="softDataSet5.xss">
+      <DependentUpon>softDataSet5.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5FC910D4-C582-4FE6-92A8-E4BD58F43F64}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>教务管理系统</RootNamespace>
+    <AssemblyName>教务管理系统</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CSkin">
+      <HintPath>..\..\..\..\..\360安全浏览器下载\CSkin 15.3.10.1\CSkin 4.0\CSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opreate.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="softDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>softDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="softDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>softDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="公共模块\User.cs" />
+    <Compile Include="动画模块\Win32.cs" />
+    <Compile Include="学生模块\学生选课.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="学生模块\学生选课.Designer.cs">
+      <DependentUpon>学生选课.cs</DependentUpon>
+    </Compile>
+    <Compile Include="教务员模块\公告栏.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="教务员模块\公告栏.Designer.cs">
+      <DependentUpon>公告栏.cs</DependentUpon>
+    </Compile>
+    <Compile Include="教务员模块\学生信息管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="教务员模块\学生信息管理.Designer.cs">
+      <DependentUpon>学生信息管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="教务员模块\排课.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="教务员模块\排课.Designer.cs">
+      <DependentUpon>排课.cs</DependentUpon>
+    </Compile>
+    <Compile Include="教务员模块\教师信息管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="教务员模块\教师信息管理.Designer.cs">
+      <DependentUpon>教师信息管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="教务员模块\毕业生查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="教务员模块\毕业生查询.Designer.cs">
+      <DependentUpon>毕业生查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="教师模块\成绩录入.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="教师模块\成绩录入.Designer.cs">
+      <DependentUpon>成绩录入.cs</DependentUpon>
+    </Compile>
+    <Compile Include="教师模块\考试安排.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="教师模块\考试安排.Designer.cs">
+      <DependentUpon>考试安排.cs</DependentUpon>
+    </Compile>
+    <Compile Include="菜单模块\学生主菜单.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="菜单模块\学生主菜单.Designer.cs">
+      <DependentUpon>学生主菜单.cs</DependentUpon>
+    </Compile>
+    <Compile Include="菜单模块\教务员菜单.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="菜单模块\教务员菜单.Designer.cs">
+      <DependentUpon>教务员菜单.cs</DependentUpon>
+    </Compile>
+    <Compile Include="菜单模块\教师主菜单.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="菜单模块\教师主菜单.Designer.cs">
+      <DependentUpon>教师主菜单.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="学生模块\学生选课.resx">
+      <DependentUpon>学生选课.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="教务员模块\公告栏.resx">
+      <DependentUpon>公告栏.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="教务员模块\学生信息管理.resx">
+      <DependentUpon>学生信息管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="教务员模块\排课.resx">
+      <DependentUpon>排课.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="教务员模块\教师信息管理.resx">
+      <DependentUpon>教师信息管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="教务员模块\毕业生查询.resx">
+      <DependentUpon>毕业生查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="教师模块\成绩录入.resx">
+      <DependentUpon>成绩录入.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="教师模块\考试安排.resx">
+      <DependentUpon>考试安排.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="菜单模块\学生主菜单.resx">
+      <DependentUpon>学生主菜单.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="菜单模块\教务员菜单.resx">
+      <DependentUpon>教务员菜单.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="菜单模块\教师主菜单.resx">
+      <DependentUpon>教师主菜单.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="softDataSet.xsc">
+      <DependentUpon>softDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="softDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>softDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="softDataSet.xss">
+      <DependentUpon>softDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="softDataSet1.xsc">
+      <DependentUpon>softDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="softDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>softDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="softDataSet1.xss">
+      <DependentUpon>softDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Img\001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Img_QQ\btn_close_disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Img_QQ\btn_close_down.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
